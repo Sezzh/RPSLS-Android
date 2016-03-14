@@ -1,44 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RPSLS</string>
+
+    <!-- MainActivity Strings -->
     <string name="main_activity_name">
-        Rock, paper, scissors, lizard, spock
+        Piedra, papel, tijeras, lagarto, spock
     </string>
-    <string name="action_settings">Settings</string>
-    <string name="rules_title">Game rules</string>
+    <string name="rules_title">Reglas del juego</string>
     <string name="rules_scissors_paper">
-        Scissors cut paper
+        Tijeras cortan papel
     </string>
     <string name="rules_paper_rock">
-        Paper covers rock
+        Papel tapa a la piedra
     </string>
     <string name="rules_rock_lizard">
-        Rock kills lizard
+        Piedra aplasta a lagarto
     </string>
     <string name="rules_lizard_spock">
-        Lizard poisons spock
+        Lagarto envenena a spock
     </string>
     <string name="rules_spock_scissors">
-        Spock smashes scissors
+        Spock rompe a tijeras
     </string>
     <string name="rules_scissors_lizard">
-        scissors decapitates lizard
+        Tijeras decapitan a lagarto
     </string>
     <string name="rules_lizard_paper">
-        Lizard eats paper
+        Lagarto devora papel
     </string>
     <string name="rules_paper_spock">
-        Paper disproves spock
+        Papel desautoriza a spock
     </string>
     <string name="rules_spock_rock">
-        Spock vaporizes rock
+        Spock vaporiza piedra
     </string>
     <string name="rules_rock_scissors">
-        Rock crushes scissors
+        Piedra rompe tijeras
     </string>
 
     <!-- SelectionActivity -->
     <string name="selection_activity_label">
-        Game is starting!
+        El juego esta por comenzar
     </string>
-
 </resources>

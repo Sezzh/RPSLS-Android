@@ -3,4 +3,11 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- RulesFragment dimens -->
+    <dimen name="rules_title">20sp</dimen>
+    <dimen name="rules_body">14sp</dimen>
+    <dimen name="rules_body_margin">2sp</dimen>
+
+    <dimen name="selection_fab_margin">44dp</dimen>
 </resources>
