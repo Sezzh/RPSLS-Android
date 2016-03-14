@@ -41,4 +41,36 @@
         Game is starting!
     </string>
 
+    <!-- Game Strings -->
+    <string name="game_draw">
+        Draw!
+    </string>
+    <string name="game_win">
+        Wins!
+    </string>
+    <string name="game_lost">
+        Lost!
+    </string>
+    <string name="game_player">
+        Player
+    </string>
+    <string name="game_android">
+        Android
+    </string>
+    <string name="game_choice_scissors">
+        Scissors
+    </string>
+    <string name="game_choice_rock">
+        Rock
+    </string>
+    <string name="game_choice_paper">
+        Paper
+    </string>
+    <string name="game_choice_spock">
+        Spock
+    </string>
+    <string name="game_choice_lizard">
+        Lizard
+    </string>
+
 </resources>

@@ -3,7 +3,6 @@ package com.sezzh.rpsls.ui;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sezzh.rpsls.R;
+import com.sezzh.rpsls.domain.Game;
 
 /**
  * Created by sezzh on 14/03/2016.
@@ -18,8 +18,13 @@ import com.sezzh.rpsls.R;
 public class SelectionFragment extends Fragment
     implements View.OnClickListener {
 
+  public static final Integer CHOICE = 5;
   private ImageView spockButton;
-  private TextView testText;
+  private ImageView scissorsButton;
+  private ImageView rockButton;
+  private ImageView paperButton;
+  private ImageView lizardButton;
+  private TextView resultTextView;
 
   @Nullable
   @Override
@@ -35,19 +40,36 @@ public class SelectionFragment extends Fragment
     super.onStart();
     this.spockButton = (ImageView) this.getActivity()
         .findViewById(R.id.selection_button_spock);
-    this.testText = (TextView) this.getActivity()
-        .findViewById(R.id.selection_text_test);
+    this.lizardButton = (ImageView) this.getActivity()
+        .findViewById(R.id.selection_button_lizard);
+    this.scissorsButton = (ImageView) this.getActivity()
+        .findViewById(R.id.selection_button_scissors);
+    this.rockButton = (ImageView) this.getActivity()
+        .findViewById(R.id.selection_button_rock);
+    this.paperButton = (ImageView) this.getActivity()
+        .findViewById(R.id.selection_button_paper);
+    this.resultTextView = (TextView) this.getActivity()
+        .findViewById(R.id.selection_result_text);
     this.spockButton.setOnClickListener(this);
+    this.lizardButton.setOnClickListener(this);
+    this.paperButton.setOnClickListener(this);
+    this.rockButton.setOnClickListener(this);
+    this.scissorsButton.setOnClickListener(this);
+
   }
 
   @Override
   public void onClick(View v) {
-    if (v.getId() == this.spockButton.getId()) {
-      this.spockAction();
+    if (v.getId() == this.scissorsButton.getId()) {
+      this.startGame(0);
     }
   }
 
-  private void spockAction() {
-    testText.setText("works!");
+  private void startGame(Integer choice) {
+    Game game = new Game(choice, this.getActivity());
+    String result = game.play();
+    this.resultTextView.setText(result);
   }
+
+
 }
