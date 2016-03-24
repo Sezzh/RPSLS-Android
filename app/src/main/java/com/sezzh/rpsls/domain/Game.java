@@ -35,12 +35,18 @@ public class Game {
     this.playerChoice = playerChoice;
   }
 
-  public HashMap play() {
+  public Integer getPlayerChoice() {
+    return this.playerChoice;
+  }
+
+  public Integer getAndroidChoice() {
+    return this.androidChoice;
+  }
+
+  public String play() {
     String result = null;
     String playerString = this.context.getString(R.string.game_player);
-    String androidString = this.context.getString(R.string.game_android);
     String message = null;
-    String androidChoice = context.getString(choiceString[this.androidChoice]);
     if (this.playerChoice == this.androidChoice) {
       result = this.context.getString(R.string.game_draw);
       message = result;
@@ -96,8 +102,6 @@ public class Game {
       }
     }
     message = playerString + " " + result;
-    conclusions.put("message", message);
-    conclusions.put("androidChoice", androidChoice);
-    return conclusions;
+    return message;
   }
 }

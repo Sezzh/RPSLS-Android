@@ -72,5 +72,7 @@
     <string name="game_choice_lizard">
         Lizard
     </string>
-
+    <string name="result_image">
+        img_result
+    </string>
 </resources>

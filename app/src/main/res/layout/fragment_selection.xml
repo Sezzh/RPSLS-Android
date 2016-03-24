@@ -5,6 +5,7 @@
     android:layout_height="250dp">
     <ImageView
         android:id="@+id/selection_button_spock"
+        android:transitionName="@string/result_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_spock"
@@ -13,6 +14,7 @@
         android:layout_marginLeft="70dp"/>
     <ImageView
         android:id="@+id/selection_button_paper"
+        android:transitionName="@string/result_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_paper"
@@ -22,6 +24,7 @@
         android:layout_marginRight="70dp"/>
     <ImageView
         android:id="@+id/selection_button_rock"
+        android:transitionName="@string/result_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_rock"
@@ -30,6 +33,7 @@
         android:layout_marginRight="90dp"/>
     <ImageView
         android:id="@+id/selection_button_lizard"
+        android:transitionName="@string/result_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_lizard"
@@ -38,15 +42,11 @@
         android:layout_marginLeft="90dp"/>
     <ImageView
         android:id="@+id/selection_button_scissors"
+        android:transitionName="@string/result_image"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_scissors"
         android:scaleType="centerCrop"
         android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"/>
-    <TextView
-        android:id="@+id/selection_result_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"/>
 </RelativeLayout>

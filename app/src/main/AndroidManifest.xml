@@ -23,6 +23,10 @@
             android:parentActivityName=".MainActivity"
             android:label="@string/selection_activity_label">
         </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:parentActivityName=".SelectionActivity">
+        </activity>
     </application>
 
 </manifest>

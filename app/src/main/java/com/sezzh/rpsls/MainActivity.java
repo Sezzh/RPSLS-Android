@@ -35,13 +35,6 @@ public class MainActivity extends AppCompatActivity {
         startGame();
       }
     });
-
-  }
-
-  @Override
-  public void overridePendingTransition(int enterAnim, int exitAnim) {
-    super.overridePendingTransition(enterAnim, exitAnim);
-
   }
 
   private void startGame() {
